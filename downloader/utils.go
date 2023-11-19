@@ -14,7 +14,7 @@ var (
 	cyan = color.New(color.FgCyan)
 )
 
-func genSortedStreams(streams map[string]*extractors.Stream) []*extractors.Stream {
+func GenSortedStreams(streams map[string]*extractors.Stream) []*extractors.Stream {
 	sortedStreams := make([]*extractors.Stream, 0, len(streams))
 	for _, data := range streams {
 		sortedStreams = append(sortedStreams, data)

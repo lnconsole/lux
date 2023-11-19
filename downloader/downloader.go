@@ -547,7 +547,7 @@ func (downloader *Downloader) Download(data *extractors.Data) error {
 		return errors.Errorf("no streams in title %s", data.Title)
 	}
 
-	sortedStreams := genSortedStreams(data.Streams)
+	sortedStreams := GenSortedStreams(data.Streams)
 	if downloader.option.InfoOnly {
 		printInfo(data, sortedStreams)
 		return nil
